@@ -1,7 +1,5 @@
 package org.example.lesson_1_variable
 
-import java.nio.charset.Charset
-
 /*
 Скопируй решение из задачи 1 в новый файл с задачей 2. Теперь необходимо дописать реализацию программы для новых целей. Имитируем логи с сервера.
 
@@ -11,6 +9,7 @@ import java.nio.charset.Charset
 
 Оценивается не только правильная последовательность действий, но и грамотная организация кода (порядок объявления, отступы и так далее).
  */
+
 fun main() {
     var numberOfOrders: Int = 75
     val gratitudeMessage: String = "Спасибо за заказ"
