@@ -9,7 +9,7 @@ package org.example.lesson_1_variable
  */
 
 fun main() {
-    var secondsInSpace: Int = 6480
+    val secondsInSpace: Int = 6480
     val hours: Int = secondsInSpace / 3600
     val minutes: Int = (secondsInSpace - hours * 3600) / 60
     val seconds: Int = secondsInSpace - hours * 3600 - minutes * 60
