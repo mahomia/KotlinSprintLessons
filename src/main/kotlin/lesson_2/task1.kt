@@ -13,7 +13,8 @@ fun main() {
     val gradeOfstudent2 = 4
     val gradeOfstudent3 = 3
     val gradeOfstudent4 = 5
-    val averageOfGrades = (gradeOfstudent1 + gradeOfstudent2 + gradeOfstudent3 + gradeOfstudent4).toFloat() / 4
+    val nubmerOfStudents = 4
+    val averageOfGrades = (gradeOfstudent1 + gradeOfstudent2 + gradeOfstudent3 + gradeOfstudent4).toFloat() / nubmerOfStudents
 
     print(String.format("%.2f", averageOfGrades))
 }
