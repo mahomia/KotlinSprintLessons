@@ -10,13 +10,11 @@ package org.example.lesson_1_variable
 
 fun main() {
     val secondsInSpace: Int = 6480
-    val hours: Int = secondsInSpace / 3600
-    val minutes: Int = (secondsInSpace - hours * 3600) / 60
-    val seconds: Int = secondsInSpace - hours * 3600 - minutes * 60
+    val secondsInMinute = 60
+    val minutesInHour = 60
+    val hours: Int = secondsInSpace / (secondsInMinute * minutesInHour)
+    val minutes: Int = (secondsInSpace - hours * secondsInMinute * minutesInHour) / secondsInMinute
+    val seconds: Int = secondsInSpace - hours * secondsInMinute * minutesInHour - minutes * secondsInMinute
 
-    println(
-        "${hours.toString().padStart(2, '0')}" +
-                ":${minutes.toString().padStart(2, '0')}" +
-                ":${seconds.toString().padStart(2, '0')}"
-    )
+    println(String.format("%02d:%02d:%02d", hours, minutes, seconds))
 }
